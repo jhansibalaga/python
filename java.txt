@@ -1,0 +1,344 @@
+=====================================JAVA=====================================
+language-communicate each other
+
+programming language - it is a language mediator between the machine and the user
+
+translator - which translates the high level(human understandable language) to low level language( binary )
+
+high level language :  it is human understandable language(syntax is easy) and generally these are platform independent ( eg: python,java,c# )
+
+low level language : Syntax is closer to machine code (binary instructions) , platform dependent (eg: assembly language )
+
+c,c++ are middle-level languages means it have both the charcteristics of high-level and low-level
+
+translator : compiler-c,c++,java,interpreter-python
+
+java can be considered as both compiler and interpreted language
+
+syntax-skeliten of the program
+
+.java is converted into .class when it  is converted by compiler
+
+because of bytecode java have a  plartform independence feature
+
+any software  that perform instructions are called platform-ex:any os
+
+JDk(java development kit)- can be used only by developers and it contains JVM
+
+JRE(java runtime environment)-can be used by clients and it contains JVM
+
+JVM(java virtual machine)-it can take care of running and application of the program and it converts source code to byte code and then to machine level language
+
+JDK and JRE both can have JVM
+
+java is versatile high programming language which have tools like JDK , JRE , JVM
+
+' bytecode ' is platform dependent because it will change for different os's
+
+java standard versions - 8 , 11 , 17
+
+java latest version - 21
+
+ first java can be handled by "sun microsis"- present " oracle " is  handing java 
+
+founder of java - james goesling , mike sheriden , patric naughton-1995 - first version 1.0 (released in 1996,jan 23rd)
+they are called as green team
+
+first java can be called as " green talk " and then" oak " which is a national tree of USA,germany --etc and then java
+"java" is a island name in indonesia
+
+founder of c - denies ritch
+founder of python - guido van rossum
+
+Features of java :
+architectural neutral - it takes same space for any architecture ( systems configuration 32bit ,64bit )
+simple and easy - because it is comes from ' C (procedural language) '
+security is more
+object oriented programming language - objects(which have both state and behaviour) because in java every thing can be treated as objects and we can call it anywhere
+robust - it have strong memory storage management due to garbage collector
+platform independent - due to jvm which converts source code to byte code then to machine understandable language
+dynamic - it can be survive any way
+
+thread-whole program can be divided into different parts and each  part can be run in each thread
+
+multithreading-multiple threads can run simultaniously
+
+in procedural oriented we use functions it can go in procedure while in object oriented language we use objects and objects can be call anywhere
+
+IDE(interated development environment)
+
+JDK : it contains tools for developing , debugging , monitering the java applications
+
+ERRORS :
+
+Runtime errors :
+Divide by Zero: Attempting to divide a number by zero.
+
+Null Pointer Reference: Trying to access or modify an object or variable that has not been initialized.
+
+Array Index Out of Bounds: Accessing an array element with an index that is outside the valid range.
+
+Type Conversion Errors: Performing invalid type conversions, such as casting an object to a type it does not support.
+
+File Not Found: Attempting to open or read a file that does not exist.
+
+Insufficient Memory: When the program runs out of available memory.
+
+Stack Overflow: When the stack memory is exhausted, often due to excessive recursion.
+
+compiletime errors :
+Syntax Errors: Violations of the programming language's syntax rules. For example, missing semicolons, unbalanced parentheses, or misspelled keywords.
+
+Type Errors: Mismatches between expected and actual data types. For example, assigning a string to an integer variable.
+
+Declaration Errors: Using variables or methods that have not been declared or defined.
+
+Scope Errors: Using variables or methods outside their defined scope.
+
+Access Modifier Errors: Violating access control rules, such as trying to access a private method from outside its class.
+
+ACCESS MODIFIERS:
+public - anywhere we can use
+private - with in the class
+protected -with in the class , with in the package,different package with subclass
+default - with in the class , with in the package
+
+class is a keyword
+
+static is a keyword if use this before a method  we no need to create an objects
+
+void is a keyword which does does not return anything
+
+ if we use the " final "  keyword before the class it can not be inherited
+
+main method - starting point of the execution0
+
+system is a class 
+
+out is a member of system class which means we are giving output
+
+println is a member of system class which is to print anything in new line
+
+package - collection of classes and interfaces
+
+string[ ] - it represents an array
+
+VARIABLES :
+variable - it is like a container which is used to store the value and it is for temporary storage
+local variable- if we declare a variable in inside a method then scope of that variable is upto that inside the body of the method only and we use final keyword for this
+instance variable-if we declare a variable inside the class but outside the method and we use static keyword
+static variable- if we use static keyword before the variable then it is called as static variable and it is initialized only once
+
+DATA TYPES :
+datatype - it represents the type of data holds
+primitive datatype : it has fixed size and it stores single value and actual value
+byte - 128  to -127 (8bit)
+short -  -32768 to 32767 16bit
+int -32bit
+long -64bit
+float -32bit
+double -64bit
+char -16bit unicode charcter
+boolean - true/false
+
+non-primitive datatype : it does not have fixed size and stores multiple values eg: array , string
+
+' * ' - star is used in packages to get all classes ,performance is decreases
+
+scanner is a class
+
+Scanner sc = new Scanner(System.in) - ' .in ' means user giving an input
+
+int a = scan.nextInt ( ); - standard input
+
+scan.next( ) - it does not read white spaces
+
+scan.nextline( ) - it reads white spaces
+
+keywords - predefined words which are having particular purpose
+
+COMMENTS  :
+single line - //
+multiline - /*  */
+documentation comment - /** */ -used in project documentation 
+in java for printing powers we use " (int)Math.pow(a,2) "-it means  , math is  static
+a^2 if we use (int) before the method it prints integer value
+
+OPERATORS :
+unary operator - single operator & operand
+eg- a++ ( post increment , increment at next line )
+       ++a ( pre increment , increment at same line)
+       ~ :  converts positive to negative by adding 1 to the number
+        ! : converts true to false
+arthmetic operators : +,-,/,%,*
+relational operators : == , != , > , >= , < , <=
+ternary operatoers : 
+exp1? : exp2 : exp3
+10<6 :10 :6  
+shift operators : 
+ 10 << 2 ( left shift ) - a=number to shift
+                                    b=no.of bits to shift  
+it performs in (a * 2powerb) it means 10* 2 ^2 =40
+  20>>5 ( right shift ) - it performs in ( a/2powerb) it means 20/2^5 =0
+logical operators :
+AND : both conditions have to be true it gives true otherwise false(&&)
+OR : either one condtion is true it gives true ( | | )
+not - true or false
+assignment operators : = , += , -= , *= , /= ,%=
+bitwise operators: & , |
+
+LOOPING STATEMENTS :
+for - ( ; ; ) - it prints infinite times and it is entry control loop
+while - it is also entry control loop
+do while - it is exit control loop
+for each -  print each element
+switch case - select one of many code blocks for execution
+                         eg : voting
+
+what is the difference between the for loop and the for-each loop ?
+-Indexing: For loop uses an index, while for-each loop uses an iterator.
+- Flexibility: For loop offers more flexibility in accessing elements, while for-each loop is more straightforward and concise.
+- Applicability: For loop can be used with any iterable object, while for-each loop only works with collections or arrays that implement the Iterable interface.
+
+
+JUMPING STATEMENTS :
+break - it stops up to that element
+continue - it skips the value
+CONTROL STATEMENTS :
+if 
+if else
+switch case : eg - voting
+nested if -
+eg : army selection , miss india selection
+
+ARRAY :
+types - 1D(dimentional),2D,3D
+if we use " finally " keyword it is end line to that program
+
+difference between for loop and while loop - in for loop before we know the no.of iterations to do but in while loop we don't know the no.of iterations to do just only we know the condition
+
+OOPS :
+abstraction
+encapsulation
+polymorphism
+inheritence
+OBJECT :
+real world entity which has both state and behaviour , eg : car - state : color,price ( frontend )
+                                                                                                       behaviour :speed ,milage(backend) 
+syntax :
+classname objectname = new classname( ) ;
+new is keyword which is used to allocate memory
+
+constructor - it is simple method which is invoked whenever the object is created , classname and constructor name are same and it does not have return statement
+
+CLASS : 
+class is a blue print of object and it is a collection of variables and methods ,objects
+syntax :
+class classname {
+variables;
+methods;
+objects; 
+}
+difference between method and constructor is method created using return type and methodname, while the methodname and classname should not be same but the constructor is created with the class name only
+if we create multiple classes then we have to create multiple methods
+one file have only one public class
+
+INHERITENCE : 
+one class  acquires the properties from another class
+it is used for code reusability
+class a{ }
+class a extends a {
+}
+5 types
+single - one parent class and one child ( class a,b )
+
+multi-level - grandparent,parent,child ( class a to class b to class c )
+
+hierarchial - single parent multiple childs
+
+multiple - one class extends multiple classes ( it is not posiible because when we inherits multiple classes, there is a confusion  while we are calling same method in both the classes this is called as " ambiguity "
+   
+hybrid - combination of  any two different inheritences
+
+if we create object for child class we can access all elements in both parent class and child class
+super keyword is used to access the methods,constructors in parent class
+super( ); - for calling constructor
+
+ABSTRACTION : hiding the data
+we use two keywords  abstract , interface
+if there is abstract method then the class must be a abstract class
+there is no abstract variables
+in abstarct class can have both abstract methods and non-abstarct methods 
+for abstarct class object creation is not possible if we want to create the object then we extends that class
+we can create constructors for the abstract calss
+abstract method should not contain body
+for abstract class variables we can use  static,final keywords but for the abstract methods we can use only public,protected
+we call static methods , static variables by their classname
+eg : classname.method( ); or classname.variablename;
+
+INTERFACE :
+interface is blueprint of class
+syntax :
+interface interfacename {  }
+in interface we can declare abstract , static , default methods only
+" implements " keyword is used to acquire the properties of interface to class
+" extends " keyword is used to acquires the properties of interface to interface
+interfaces can not have constructors
+we can not create objects for interfaces
+interface is collection of methods and variables and is used to achieve multiple inheritence
+interface contains abstract methods also
+
+POLYMORPHISM :
+poly(greek word) means many and morphs means forms
+there are 2 types 
+
+compile time - while we writing the code when we are hovering it shows error it is called compile time error ( method overloading )
+Method Overloading :
+same method can define many times but no.of parameters are different or return/data type of variables is different
+eg : class {
+run( ){ }
+run( int n){ }
+run ( int a , int b ){ }
+run(float c){ }
+}
+
+run time - after run the program it shows errors in console it is called run time ( method overriding )
+Method Overriding :
+same method with same parameters and same return type but defined in different classes
+eg : class A {
+  run ( int a ) 
+}
+class B {
+run(int a )
+}
+class C {
+run( int a )
+}
+
+ENCAPSULATION : 
+collection of variables and methods in a single unit
+the main advantage of it is it provides more security by using access modifiers
+
+ARRAYS :
+it is a collection of homogeneous elements
+creation of new array :
+int a[ ] = new int [6];
+declaration :
+datatype [ ] variablename ;
+eg : int [ ] i ;  or   int i [ ] ;
+advantages :
+stores multiple values
+easy insertion ( means changes the values by indexing )
+code optimization
+random access
+disadvantages :
+fixed size
+size can not be change at the run time it can be prevented using collections concept
+memory wasteage
+Types Of Arrays :
+single dimensional array :
+store the elements in single axis
+int a [ ] ={ 12,13,14 }
+multi dimensional array :
+store the elements with two axes ( rows and columns )
+int a[2][2] = { {1,2},{2,4} }
